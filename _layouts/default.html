@@ -13,19 +13,19 @@
         <div class="inner clearfix">
             <h1>
               <a href="/" class="external-link">
-                <strong>analytics</strong>.usa.gov
-              </a>
+                <img src="http://www.gov.je/_controltemplates/15/C5.GovJEResponsive/images/Leoaprds-white-V1.svg" alt="">
+                <span style="font-weight:300;">webanalytics</span>.gov.je
+                </a>
             </h1>
             <ul class="links">
               <li><a href="#explanation">About <span class="sm-hide">this site</span></a></li>
-              <li><a href="{{ site.url }}{% if page.slug %}/{{ page.slug }}{% endif %}/data/">Data</a></li>
             </ul>
             {% assign agencies = site.agencies | sort:"name"  %}
             {% if agencies.size > 0 %}
               {% unless page.url contains 'data' %}
                 <div class="agency-selector-wrap">
                   <form>
-                    <label for="agency-selector">Select an agency</label>
+                    <label for="agency-selector">Select a website</label>
                     <select name="agency-selector" id="agency-selector" title="Agency Selection Dropdown">
                       <option value="{{site.baseurl}}/">{{site.dropdown_title}}</option>
                       {% for agency in agencies %}
