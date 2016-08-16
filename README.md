@@ -1,6 +1,22 @@
-## webanalytics.gov.je
-A project to publish website analytics for the States of Jersey government.
-Based on a project by 18F for the Government of the United States of America (original project here - https://github.com/18F/analytics.usa.gov).
+## analytics.usa.gov
+
+A project to publish website analytics for the US federal government.
+
+For a detailed description of how the site works, read [18F's blog post on analytics.usa.gov](https://18f.gsa.gov/2015/03/19/how-we-built-analytics-usa-gov/).
+
+Other organizations who have reused this project for their analytics dashboard:
+* http://analytics.phila.gov/
+* https://bouldercolorado.gov/stats
+* http://analytics.tdec.tn.gov/
+* http://analytics.cityofsacramento.org/
+* http://analytics.muni.org/
+* http://analytics.smgov.net/
+* http://analytics.douglascounty-ne.gov/
+* https://analytics.wsu.edu/
+* http://www2.ed.gov/analytics
+
+
+[This blog post details their implementations and lessons learned](https://18f.gsa.gov/2016/01/05/tips-for-adapting-analytics-usa-gov/).
 
 
 ### Setup
