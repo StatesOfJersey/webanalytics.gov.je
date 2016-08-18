@@ -43,7 +43,7 @@ url: http://sojwebanalytics2.azurewebsites.net
 dropdown_title: All Participating Websites
 
 # Default data url
-data_url: http://sojwebanalytics2.azurewebsites.net/data/live
+data_url: http://dev4.bearpig.com/data/live
 
 # GitHub information
 org_name: StatesOfJersey
