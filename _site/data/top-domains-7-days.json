@@ -1,0 +1,79 @@
+{
+  "name": "top-domains-7-days",
+  "query": {
+    "start-date": "7daysAgo",
+    "end-date": "yesterday",
+    "dimensions": "ga:hostname",
+    "metrics": [
+      "ga:sessions"
+    ],
+    "sort": [
+      "-ga:sessions"
+    ],
+    "start-index": 1,
+    "max-results": 20,
+    "samplingLevel": "HIGHER_PRECISION"
+  },
+  "meta": {
+    "name": "Top Domains (7 Days)",
+    "description": "Last week's top 20 domains, measured by visits, for all sites."
+  },
+  "data": [
+    {
+      "domain": "www.gov.je",
+      "visits": "182691"
+    },
+    {
+      "domain": "translate.googleusercontent.com",
+      "visits": "31"
+    },
+    {
+      "domain": "(not set)",
+      "visits": "21"
+    },
+    {
+      "domain": "labtest.gov.je",
+      "visits": "21"
+    },
+    {
+      "domain": "lpo",
+      "visits": "11"
+    },
+    {
+      "domain": "webcache.googleusercontent.com",
+      "visits": "6"
+    },
+    {
+      "domain": "web.archive.org",
+      "visits": "2"
+    },
+    {
+      "domain": "govtest.je",
+      "visits": "1"
+    },
+    {
+      "domain": "sp-govjedev",
+      "visits": "1"
+    },
+    {
+      "domain": "www.jerseymet.gov.je",
+      "visits": "1"
+    },
+    {
+      "domain": "www.jerseyreds.je",
+      "visits": "1"
+    },
+    {
+      "domain": "www.world-check.com",
+      "visits": "1"
+    },
+    {
+      "domain": "r.search.yahoo.com",
+      "visits": "0"
+    }
+  ],
+  "totals": {
+    "visits": 182788
+  },
+  "taken_at": "2016-08-18T15:08:38.722Z"
+}

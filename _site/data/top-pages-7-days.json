@@ -1,0 +1,147 @@
+{
+  "name": "top-pages-7-days",
+  "query": {
+    "start-date": "7daysAgo",
+    "end-date": "yesterday",
+    "dimensions": "ga:hostname,ga:pagePath,ga:pageTitle",
+    "metrics": [
+      "ga:pageviews"
+    ],
+    "sort": [
+      "-ga:pageviews"
+    ],
+    "start-index": 1,
+    "max-results": 20,
+    "samplingLevel": "HIGHER_PRECISION"
+  },
+  "meta": {
+    "name": "Top Pages (7 Days)",
+    "description": "Last week's top 20 pages, measured by page views, for all sites."
+  },
+  "data": [
+    {
+      "domain": "www.gov.je",
+      "page": "/weather/pages/jersey-forecast.aspx",
+      "page_title": "Jersey weather forecast",
+      "visits": "194673"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobs.aspx",
+      "page_title": "Jobs in Jersey",
+      "visits": "76656"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/pages/default.aspx",
+      "page_title": "States of Jersey",
+      "visits": "46441"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/weather/pages/tides.aspx",
+      "page_title": "Tide times - St Helier",
+      "visits": "35502"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/weather/pages/guernsey-forecast.aspx",
+      "page_title": "Guernsey weather forecast",
+      "visits": "31607"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=19",
+      "page_title": "Jobs in Jersey - States of Jersey",
+      "visits": "23587"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=6",
+      "page_title": "Jobs in Jersey - Hospitality & Catering",
+      "visits": "19888"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=26",
+      "page_title": "Jobs in Jersey - Retail, Sales, Warehouse & Fulfilment",
+      "visits": "17890"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/weather/pages/radar.aspx",
+      "page_title": "Weather radar for the Channel Islands area",
+      "visits": "13945"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=13",
+      "page_title": "Jobs in Jersey - Secretarial & Administrative",
+      "visits": "13576"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobs.aspx#mostpopjobs",
+      "page_title": "Jobs in Jersey",
+      "visits": "12943"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/weather/pages/shipping.aspx",
+      "page_title": "Channel Islands shipping forecast",
+      "visits": "12110"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=5",
+      "page_title": "Jobs in Jersey - Health & Social Care",
+      "visits": "10294"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=3",
+      "page_title": "Jobs in Jersey - Banking, Finance Legal & Insurance",
+      "visits": "8081"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=4",
+      "page_title": "Jobs in Jersey - Building & Construction",
+      "visits": "7196"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=23",
+      "page_title": "Jobs in Jersey - Domestic & Security",
+      "visits": "6570"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=27",
+      "page_title": "Jobs in Jersey - Transport, Driving & Deliveries",
+      "visits": "6521"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/weather/pages/jersey-forecast.aspx#mostpopweather",
+      "page_title": "Jersey weather forecast",
+      "visits": "6338"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=8",
+      "page_title": "Jobs in Jersey - Education & Childcare",
+      "visits": "6153"
+    },
+    {
+      "domain": "www.gov.je",
+      "page": "/working/jobcareeradvice/pages/jobssearchresults.aspx?fulltime=0&residency=2",
+      "page_title": "Jobs Search Results",
+      "visits": "5329"
+    }
+  ],
+  "totals": {
+    "visits": 555300
+  },
+  "taken_at": "2016-08-18T15:08:32.290Z"
+}

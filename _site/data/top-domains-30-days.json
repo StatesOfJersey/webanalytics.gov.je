@@ -1,0 +1,107 @@
+{
+  "name": "top-domains-30-days",
+  "query": {
+    "start-date": "30daysAgo",
+    "end-date": "yesterday",
+    "dimensions": "ga:hostname",
+    "metrics": [
+      "ga:sessions"
+    ],
+    "sort": [
+      "-ga:sessions"
+    ],
+    "start-index": 1,
+    "max-results": 20,
+    "samplingLevel": "HIGHER_PRECISION"
+  },
+  "meta": {
+    "name": "Top Domains (30 Days)",
+    "description": "Last 30 days' top 20 domains, measured by visits, for all sites."
+  },
+  "data": [
+    {
+      "domain": "www.gov.je",
+      "visits": "792333"
+    },
+    {
+      "domain": "translate.googleusercontent.com",
+      "visits": "119"
+    },
+    {
+      "domain": "labtest.gov.je",
+      "visits": "78"
+    },
+    {
+      "domain": "www.gov.je.googleweblight.com",
+      "visits": "71"
+    },
+    {
+      "domain": "lpo",
+      "visits": "35"
+    },
+    {
+      "domain": "(not set)",
+      "visits": "25"
+    },
+    {
+      "domain": "webcache.googleusercontent.com",
+      "visits": "21"
+    },
+    {
+      "domain": "budurl.me",
+      "visits": "8"
+    },
+    {
+      "domain": "www.world-check.com",
+      "visits": "8"
+    },
+    {
+      "domain": "sp-govjedev",
+      "visits": "7"
+    },
+    {
+      "domain": "web.archive.org",
+      "visits": "6"
+    },
+    {
+      "domain": "www.jerseyreds.je",
+      "visits": "5"
+    },
+    {
+      "domain": "131.253.14.125",
+      "visits": "4"
+    },
+    {
+      "domain": "now.barclays.com",
+      "visits": "4"
+    },
+    {
+      "domain": "127.0.0.1",
+      "visits": "3"
+    },
+    {
+      "domain": "govtest.je",
+      "visits": "3"
+    },
+    {
+      "domain": "rms-world-check-one.thomsonreuters.com",
+      "visits": "3"
+    },
+    {
+      "domain": "jerseynurses.org",
+      "visits": "2"
+    },
+    {
+      "domain": "controller.access.network",
+      "visits": "1"
+    },
+    {
+      "domain": "fanyi.myyoudao.com",
+      "visits": "1"
+    }
+  ],
+  "totals": {
+    "visits": 792737
+  },
+  "taken_at": "2016-08-18T15:08:39.897Z"
+}
