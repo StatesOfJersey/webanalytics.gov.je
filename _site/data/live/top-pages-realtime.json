@@ -1,0 +1,121 @@
+{
+  "name": "top-pages-realtime",
+  "query": {
+    "dimensions": "rt:pagePath,rt:pageTitle",
+    "metrics": [
+      "rt:activeUsers"
+    ],
+    "sort": [
+      "-rt:activeUsers"
+    ],
+    "max-results": 20
+  },
+  "meta": {
+    "name": "Top Pages (Live)",
+    "description": "The top 20 pages, measured by active onsite users, for all sites."
+  },
+  "data": [
+    {
+      "page": "/weather/pages/jersey-forecast.aspx",
+      "page_title": "Jersey weather forecast",
+      "active_visitors": "62"
+    },
+    {
+      "page": "/weather/pages/guernsey-forecast.aspx",
+      "page_title": "Guernsey weather forecast",
+      "active_visitors": "12"
+    },
+    {
+      "page": "/weather/pages/radar.aspx",
+      "page_title": "Weather radar for the Channel Islands area",
+      "active_visitors": "12"
+    },
+    {
+      "page": "/weather/pages/tides.aspx",
+      "page_title": "Tide times - St Helier",
+      "active_visitors": "7"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobs.aspx",
+      "page_title": "Jobs in Jersey",
+      "active_visitors": "7"
+    },
+    {
+      "page": "/weather/pages/shipping.aspx",
+      "page_title": "Channel Islands shipping forecast",
+      "active_visitors": "6"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=6",
+      "page_title": "Jobs in Jersey - Hospitality & Catering",
+      "active_visitors": "6"
+    },
+    {
+      "page": "/leisure/libraries/pages/index.aspx",
+      "page_title": "Library services",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/pages/default.aspx",
+      "page_title": "States of Jersey",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/weather/pages/live-weather-data.aspx",
+      "page_title": "Live weather observations for Jersey",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=19",
+      "page_title": "Jobs in Jersey - States of Jersey",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/home/rentingbuying/buyersguide/pages/estateagents.aspx",
+      "page_title": "List of estate agents (private rental)",
+      "active_visitors": "3"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobssearchresults.aspx?fulltime=0&residency=2",
+      "page_title": "Jobs Search Results",
+      "active_visitors": "3"
+    },
+    {
+      "page": "/http://www.gov.je/sitecollectiondocuments/government and administration/r house price index q2 2016 20160818 su.pdf",
+      "page_title": "House Price Index report for Q2 2016",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/lifeevents/movingtojersey/pages/tax.aspx",
+      "page_title": "Taxation in Jersey",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/weather/pages/satellite.aspx",
+      "page_title": "Channel Islands weather satellite images",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/weather/pages/warnings.aspx",
+      "page_title": "CI weather warnings",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/weather/pages/webcam.aspx",
+      "page_title": "Runway webcam – Jersey Airport",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/details.aspx?npostingid=4199&npostingtargetid=8408",
+      "page_title": "Job details",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobdetails.aspx?jobid=51931&jobtypeid=19",
+      "page_title": "Job Details - Ward Clerk",
+      "active_visitors": "2"
+    }
+  ],
+  "totals": {},
+  "taken_at": "2016-08-18T16:28:30.874Z"
+}
