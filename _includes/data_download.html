@@ -13,8 +13,8 @@
         {% if agencies.size > 0 %}
         <div class="agency-selector-wrap">
           <form>
-            <label for="agency-selector">Select an agency</label>
-            <select name="agency-selector" id="agency-selector"  title="Agency Selection Dropdown">
+            <label for="agency-selector">Select an website</label>
+            <select name="agency-selector" id="agency-selector"  title="Website Selection Dropdown">
               <option value="{{ site.baseurl }}/data/">{{ site.dropdown_title }}</option>
               {% for agency in agencies %}
                 <option value="{{ site.baseurl }}{{ agency.url }}data/">{{ agency.name }}</option>
@@ -23,7 +23,7 @@
           </form>
         </div>
         {% endif %}
-        <h2>Visits to and traffic sources for {% if entity == 'government' %}all participating agencies{% else %}{{ entity }}{% endif %}</h2>
+        <h2>Visits to and traffic sources for {% if entity == 'government' %}all participating websites{% else %}{{ entity }}{% endif %}</h2>
         <table class="usa-table-borderless downloads">
           <thead>
             <tr>
