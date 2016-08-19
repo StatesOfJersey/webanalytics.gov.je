@@ -317,7 +317,8 @@
               return d.page_title;
             })
             .attr("href", function(d) {
-              return exceptions[d.page] || ("http://" + d.page);
+              // added fix for gov.je pages as GA doesn't display the full URL
+              return exceptions[d.page] || ("http://gov.je" + d.page);
             })
             .text(function(d) {
               return title_exceptions[d.page] || d.page_title;
