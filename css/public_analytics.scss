@@ -192,9 +192,10 @@ header {
 
     @include media($medium-screen) {
       line-height: 5.5rem;
+      font-size:3rem;
     }
     @include media($mobile-small-screen) {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       padding-top: 4px; //to give h1 and links same baseline
     }
   }
