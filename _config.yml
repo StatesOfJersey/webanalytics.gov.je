@@ -43,7 +43,7 @@ url: http://sojwebanalytics2.azurewebsites.net
 dropdown_title: All Participating Websites
 
 # Default data url
-data_url: https://s3-eu-west-1.amazonaws.com/sojdata/sojdata.amazonaws.com
+data_url: https://s3-eu-west-1.amazonaws.com/sojdata/live/
 
 # GitHub information
 org_name: StatesOfJersey
