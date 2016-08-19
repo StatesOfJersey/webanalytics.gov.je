@@ -1,6 +1,6 @@
   {% if page.url == '/' %}
     {% assign data_url = site.data_url %}
-    {% assign entity = "government" %}
+    {% assign entity = "States of Jersey" %}
   {% else %}
     {% assign data_url = page.data_url %}
     {% assign entity = "department's" %}
@@ -61,10 +61,6 @@
           </figure>
 
           <p>
-            Based on rough network segmentation data, we estimate that <strong>less than 5%</strong> of all traffic across all agencies comes from US federal government networks.
-          </p>
-
-          <p>
             Much more detailed data is available in <strong><a href="data/">downloadable CSV and JSON</a></strong>. This includes data on combined browser and OS usage.
           </p>
         </section>
@@ -112,6 +108,8 @@
         <!-- forces section to wrap, couldn't find a better way -->
         <div style="clear: both"></div>
 
+<!-- Country data - currently not working (no source generated)
+
         <section class="section_headline">
           <h3>Visitor Locations Right Now</h3>
         </section>
@@ -145,6 +143,8 @@
           </figure>
         </section>
 
+      End of Country data  -->
+
       </div>
 
       <div id="secondary_data" class="width-one-third">
@@ -153,7 +153,7 @@
           <!-- see: http://heydonworks.com/practical_aria_examples/ -->
           <h3>Top <span id="top_table_type">Pages</span></h3>
           <ul class="pills" role="tablist">
-            <li><a role="tab" data-type="Pages" aria-selected="true" href="#top-pages-realtime" class="site-nav">Now</a></li>
+            <li><a role="tab" data-type="Pages" aria-selected="true" href="https://gov.je/#top-pages-realtime" class="site-nav">Now</a></li>
             <li><a role="tab" data-type="Domains" href="#top-pages-7-days" class="site-nav">7 Days</a></li>
             <li><a role="tab" data-type="Domains" href="#top-pages-30-days" class="site-nav">30 Days</a></li>
           </ul>
@@ -191,6 +191,8 @@
 
         </section>
 
+<!-- Top Downloads - currently not working (no source generated)
+
         <section id="top_downloads_table">
 
           <h3>Top Downloads</h3>
@@ -204,3 +206,4 @@
 
         </section>
 
+      End of Top Downloads -->
