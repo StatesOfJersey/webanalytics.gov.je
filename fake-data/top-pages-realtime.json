@@ -1,121 +1,121 @@
 {
-    "name": "top-pages-realtime",
-    "query": {
-        "dimensions": "rt:pagePath,rt:pageTitle",
-        "metrics": [
-            "rt:activeUsers"
-        ],
-        "sort": [
-            "-rt:activeUsers"
-        ],
-        "max-results": 20
-    },
-    "meta": {
-        "name": "Top Pages (Live)",
-        "description": "The top 20 pages, measured by active onsite users, for all sites."
-    },
-    "data": [
-        {
-            "page": "earthquake.usgs.gov/earthquakes/eventpage/us100044k6",
-            "page_title": "M7.2 - 109km W of Murghob, Tajikistan",
-            "active_visitors": "804"
-        },
-        {
-            "page": "earthquake.usgs.gov/earthquakes/map/",
-            "page_title": "Earthquakes",
-            "active_visitors": "551"
-        },
-        {
-            "page": "forecast.weather.gov/mapclick.php",
-            "page_title": "National Weather Service",
-            "active_visitors": "444"
-        },
-        {
-            "page": "ceac.state.gov/genniv/general/complete/complete_travel.aspx?node=travel",
-            "page_title": "Nonimmigrant Visa - Travel Information",
-            "active_visitors": "229"
-        },
-        {
-            "page": "ceac.state.gov/genniv/default.aspx",
-            "page_title": "Nonimmigrant Visa - Instructions Page",
-            "active_visitors": "211"
-        },
-        {
-            "page": "ceac.state.gov/ceac/",
-            "page_title": "Consular Electronic Application Center",
-            "active_visitors": "210"
-        },
-        {
-            "page": "nasa.gov/",
-            "page_title": "NASA",
-            "active_visitors": "185"
-        },
-        {
-            "page": "ceac.state.gov/genniv/general/complete/complete_workeducation2.aspx?node=workeducation2",
-            "page_title": "Nonimmigrant Visa - Previous Work/Education/Training Information",
-            "active_visitors": "178"
-        },
-        {
-            "page": "ceac.state.gov/genniv/general/complete/complete_personal.aspx?node=personal1",
-            "page_title": "Nonimmigrant Visa - Personal Information 1",
-            "active_visitors": "177"
-        },
-        {
-            "page": "ceac.state.gov/genniv/general/complete/complete_workeducation1.aspx?node=workeducation1",
-            "page_title": "Nonimmigrant Visa - Present Work/Education/Training Information",
-            "active_visitors": "172"
-        },
-        {
-            "page": "ceac.state.gov/genniv/general/esign/complete_done.aspx?node=done",
-            "page_title": "Nonimmigrant Visa - Confirmation Page",
-            "active_visitors": "166"
-        },
-        {
-            "page": "nasa.gov/feature/new-horizons-returns-first-of-the-best-images-of-pluto/",
-            "page_title": "New Horizons Returns First, Best Images of Pluto | NASA",
-            "active_visitors": "162"
-        },
-        {
-            "page": "ceac.state.gov/genniv/general/complete/complete_contact.aspx?node=addressphone",
-            "page_title": "Nonimmigrant Visa - Address and Phone Information",
-            "active_visitors": "150"
-        },
-        {
-            "page": "usgs.gov/",
-            "page_title": "Welcome to the USGS - U.S. Geological Survey",
-            "active_visitors": "131"
-        },
-        {
-            "page": "ceac.state.gov/genniv/common/recovery.aspx",
-            "page_title": "Nonimmigrant Visa - Recover Your Application",
-            "active_visitors": "127"
-        },
-        {
-            "page": "whitehouse.gov/blog/2015/12/05/president-obama-addresses-nation-keeping-american-people-safe",
-            "page_title": "President Obama Addresses the Nation on Keeping the American People Safe | whitehouse.gov",
-            "active_visitors": "123"
-        },
-        {
-            "page": "ceac.state.gov/genniv/general/complete/passport_visa_info.aspx?node=pptvisa",
-            "page_title": "Nonimmigrant Visa - Passport Information",
-            "active_visitors": "116"
-        },
-        {
-            "page": "egov.uscis.gov/casestatus/mycasestatus.do",
-            "page_title": "myUSCIS - Case Status",
-            "active_visitors": "114"
-        },
-        {
-            "page": "weather.gov/",
-            "page_title": "National Weather Service",
-            "active_visitors": "114"
-        },
-        {
-            "page": "ceac.state.gov/genniv/",
-            "page_title": "Nonimmigrant Visa - Instructions Page",
-            "active_visitors": "112"
-        }
+  "name": "top-pages-realtime",
+  "query": {
+    "dimensions": "rt:pagePath,rt:pageTitle",
+    "metrics": [
+      "rt:activeUsers"
     ],
-    "totals": {},
-    "taken_at": "2015-12-07T08:34:03.637Z"
+    "sort": [
+      "-rt:activeUsers"
+    ],
+    "max-results": 20
+  },
+  "meta": {
+    "name": "Top Pages (Live)",
+    "description": "The top 20 pages, measured by active onsite users, for all sites."
+  },
+  "data": [
+    {
+      "page": "/weather/pages/jersey-forecast.aspx",
+      "page_title": "Jersey weather forecast",
+      "active_visitors": "77"
+    },
+    {
+      "page": "/weather/pages/tides.aspx",
+      "page_title": "Tide times - St Helier",
+      "active_visitors": "12"
+    },
+    {
+      "page": "/weather/pages/guernsey-forecast.aspx",
+      "page_title": "Guernsey weather forecast",
+      "active_visitors": "11"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobs.aspx",
+      "page_title": "Jobs in Jersey",
+      "active_visitors": "10"
+    },
+    {
+      "page": "/pages/default.aspx",
+      "page_title": "States of Jersey",
+      "active_visitors": "8"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=19",
+      "page_title": "Jobs in Jersey - States of Jersey",
+      "active_visitors": "7"
+    },
+    {
+      "page": "/weather/pages/shipping.aspx",
+      "page_title": "Channel Islands shipping forecast",
+      "active_visitors": "6"
+    },
+    {
+      "page": "/home/rentingbuying/buyersguide/pages/estateagents.aspx",
+      "page_title": "List of estate agents (private rental)",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/weather/pages/radar.aspx",
+      "page_title": "Weather radar for the Channel Islands area",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/details.aspx?npostingid=4199&npostingtargetid=8408",
+      "page_title": "Job details",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=5",
+      "page_title": "Jobs in Jersey - Health & Social Care",
+      "active_visitors": "4"
+    },
+    {
+      "page": "/leisure/libraries/pages/index.aspx",
+      "page_title": "Library services",
+      "active_visitors": "3"
+    },
+    {
+      "page": "/weather/pages/live-weather-data.aspx",
+      "page_title": "Live weather observations for Jersey",
+      "active_visitors": "3"
+    },
+    {
+      "page": "/government/departments/chiefministers/chiefministerssections/pages/populationoffice.aspx",
+      "page_title": "Population Office",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/government/nonexeclegal/judicialgreffe/pages/courtlists.aspx",
+      "page_title": "Court lists (Royal Court and Petty Debts Court)",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/government/planningperformance/budgetaccounts/pages/statesofjerseyaccounts.aspx",
+      "page_title": "States of Jersey accounts",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/weather/pages/webcam.aspx",
+      "page_title": "Runway webcam – Jersey Airport",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=13",
+      "page_title": "Jobs in Jersey - Secretarial & Administrative",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=27",
+      "page_title": "Jobs in Jersey - Transport, Driving & Deliveries",
+      "active_visitors": "2"
+    },
+    {
+      "page": "/working/jobcareeradvice/pages/jobsbycategory.aspx?jobtypeid=8",
+      "page_title": "Jobs in Jersey - Education & Childcare",
+      "active_visitors": "2"
+    }
+  ],
+  "totals": {},
+  "taken_at": "2016-08-19T15:08:46.478Z"
 }
