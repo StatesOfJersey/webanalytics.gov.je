@@ -27,8 +27,8 @@
           data-block="realtime"
           data-source="{{ data_url }}/realtime.json"
           data-refresh="15">
-          <h2 id="current_visitors" class="data">...</h2>
-          <div class="chart_subtitle">people on {{ entity }} now</div>
+          <h2 id="current_visitors" class="data">0</h2>
+          <div class="chart_subtitle">people on <strong>{{ entity }}</strong> now</div>
         </section>
 
         <section class="section_headline visits_today">
@@ -48,7 +48,7 @@
         </section>
 
         <section class="section_subheadline">
-          There were <span id="total_visitors" class="data">...</span> visits over the past 90 days.
+          There were <span id="total_visitors" class="data">0</span> visits over the past 90 days.
         </section>
 
         <section id="devices" class="three_column"
