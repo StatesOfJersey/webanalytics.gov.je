@@ -1,9 +1,9 @@
   {% if page.url == '/' %}
     {% assign data_url = site.data_url %}
-    {% assign entity = "States of Jersey" %}
+    {% assign entity = "States of Jersey websites" %}
   {% else %}
     {% assign data_url = page.data_url %}
-    {% assign entity = "department's" %}
+    {% assign entity =  page.name %}
   {% endif %}
     <!--
       JavaScript block hooks look for any element with both data-block and
@@ -28,7 +28,7 @@
           data-source="{{ data_url }}/realtime.json"
           data-refresh="15">
           <h2 id="current_visitors" class="data">...</h2>
-          <div class="chart_subtitle">people on {{ entity }} websites now</div>
+          <div class="chart_subtitle">people on {{ entity }} now</div>
         </section>
 
         <section class="section_headline visits_today">
