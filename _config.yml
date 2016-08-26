@@ -37,7 +37,7 @@ title: "webanalytics.gov.je | The Government of Jersey's web traffic."
 description: "Official data on web traffic to the States of Jersey government websites."
 
 # Site's own URL
-url: http://sojwebanalytics2.azurewebsites.net
+url: http://webanalytics.gov.je
 
 # Default dropdown title, will not appear if there are no sub-pages
 dropdown_title: All Participating Websites
