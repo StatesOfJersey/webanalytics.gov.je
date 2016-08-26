@@ -162,7 +162,7 @@
 
         <section id="realtime"
           data-block="realtime"
-          data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/realtime.json"
+          data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/realtime.json"
           data-refresh="15">
           <h2 id="current_visitors" class="data">0</h2>
           <div class="chart_subtitle">people on <strong>States of Jersey websites</strong> now</div>
@@ -174,7 +174,7 @@
         </section>
         <section id="time_series"
           data-block="today"
-          data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/today.json"
+          data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/today.json"
           data-refresh="15">
           <svg class="data time-series">
           </svg>
@@ -190,7 +190,7 @@
 
         <section id="devices" class="three_column"
           data-block="devices"
-          data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/devices.json">
+          data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/devices.json">
           <h4>Devices</h4>
           <figure id="chart_device_types">
             <div class="data bar-chart">
@@ -207,14 +207,14 @@
 
           <figure id="chart_browsers"
             data-block="browsers"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/browsers.json">
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/browsers.json">
             <div class="data bar-chart">
             </div>
           </figure>
 
           <figure id="chart_ie"
             data-block="ie"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/ie.json"
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/ie.json"
             data-scale-to-parent="true">
             <h4>Internet Explorer</h4>
             <div class="data bar-chart">
@@ -227,14 +227,14 @@
 
           <figure id="chart_os"
             data-block="os"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/os.json">
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/os.json">
             <div class="data bar-chart">
             </div>
           </figure>
 
           <figure id="chart_windows"
             data-block="windows"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/windows.json"
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/windows.json"
             data-scale-to-parent="true">
             <h4>Windows</h4>
             <div class="data bar-chart">
@@ -253,7 +253,7 @@
 
         <section id="cities" class="three_column"
           data-block="cities"
-          data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-cities-realtime.json">
+          data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-cities-realtime.json">
           <h4>Cities</h4>
           <figure id="chart_top-cities-90-days">
             <div class="data bar-chart">
@@ -266,14 +266,14 @@
 
           <figure id="chart_us"
             data-block="countries"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-countries-realtime.json">
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-countries-realtime.json">
             <div class="data bar-chart">
             </div>
           </figure>
 
           <figure id="chart_countries"
             data-block="international_visits"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-countries-realtime.json">
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-countries-realtime.json">
             <h4>International</h4>
             <div class="data bar-chart">
             </div>
@@ -297,11 +297,11 @@
 
           <figure class="top-pages" id="top-pages-realtime" role="tabpanel"
             data-block="top-pages-realtime"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-pages-realtime.json"
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-pages-realtime.json"
             data-refresh="15">
             <h5><em>
               People on a <strong>single, specific page</strong> now. 
-              <a href="https://s3-eu-west-1.amazonaws.com/sojdata/live/all-pages-realtime.csv">Download the full dataset.</a>
+              <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/all-pages-realtime.csv">Download the full dataset.</a>
             </em></h5>
             <div class="data bar-chart">
             </div>
@@ -309,7 +309,7 @@
 
           <figure class="top-pages" id="top-pages-7-days" role="tabpanel"
             data-block="top-pages"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-domains-7-days.json">
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-domains-7-days.json">
             <h5><em>Visits over the last week to <strong>domains</strong>, including traffic to all pages within that domain.</em></h5>
             <div class="data bar-chart">
             </div>
@@ -317,10 +317,10 @@
 
           <figure class="top-pages" id="top-pages-30-days" role="tabpanel"
             data-block="top-pages"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-domains-30-days.json">
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-domains-30-days.json">
             <h5><em>
               Visits over the last month to <strong>domains</strong>, including traffic to all pages within that domain. 
-              <a href="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-domains-30-days.csv">Download the full dataset.</a>
+              <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-domains-30-days.csv">Download the full dataset.</a>
             </em></h5>
             <div class="data bar-chart">
             </div>
@@ -336,7 +336,7 @@
           <h5><em>Total file downloads yesterday on States of Jersey websites domains.</em></h5>
           <figure id="top-downloads"
             data-block="top-downloads"
-            data-source="https://s3-eu-west-1.amazonaws.com/sojdata/live/top-downloads-yesterday.json">
+            data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live/top-downloads-yesterday.json">
             <div class="data bar-chart">
             </div>
           </figure>
