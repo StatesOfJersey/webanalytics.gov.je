@@ -43,7 +43,7 @@ url: http://webanalytics.gov.je
 dropdown_title: All Participating Websites
 
 # Default data url
-data_url: https://s3-eu-west-1.amazonaws.com/sojdata/live
+data_url: https://s3-eu-west-1.amazonaws.com/sojwebanalytics/live
 
 # GitHub information
 org_name: StatesOfJersey
