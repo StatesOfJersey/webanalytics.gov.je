@@ -173,7 +173,9 @@
           <figure class="top-pages" id="top-pages-7-days" role="tabpanel"
             data-block="top-pages"
             data-source="{{ data_url }}/top-pages-7-days.json">
-            <h5><em>Visits over the last week to <strong>domains</strong>, including traffic to all pages within that domain.</em></h5>
+            <h5><em>Visits over the last week to <strong>pages</strong>.
+              <a href="{{ data_url }}/top-pages-7-days.csv">Download the full dataset.</a>
+            </em></h5>
             <div class="data bar-chart">
             </div>
           </figure>
@@ -182,7 +184,7 @@
             data-block="top-pages"
             data-source="{{ data_url }}/top-pages-30-days.json">
             <h5><em>
-              Visits over the last month to <strong>domains</strong>, including traffic to all pages within that domain. {% if entity == "government" %}We only count pages with at least 1,000 visits in the last month.{% endif %}
+              Visits over the last month to <strong>pages</strong>.{% if entity == "government" %}We only count pages with at least 1,000 visits in the last month.{% endif %}
               <a href="{{ data_url }}/top-pages-30-days.csv">Download the full dataset.</a>
             </em></h5>
             <div class="data bar-chart">
