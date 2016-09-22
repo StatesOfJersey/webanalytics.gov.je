@@ -349,6 +349,7 @@ section {
 }
 
 #main_data {
+  border-right:1px solid #7d7d7d;
   @include media($small-screen)  {
     border-right: none;
   }
@@ -371,7 +372,6 @@ section {
 }
 
 #secondary_data {
-  border-left:  1px solid #7d7d7d;
   border-bottom:  1px solid #7d7d7d;
   @include media($small-screen)  {
     border-top:  1px solid #7d7d7d;
@@ -384,6 +384,7 @@ section {
 #explanation {
   border-top:  1px solid #7d7d7d;
   margin-top: -1px;
+  margin-left:-1px;
   h4 {font-size: 90%}
 
   p {

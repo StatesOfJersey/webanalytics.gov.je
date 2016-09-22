@@ -316,9 +316,11 @@ section {
     .container {
       max-width: 768px; } }
 
-@media screen and (max-width: 768px) {
-  #main_data {
-    border-right: none; } }
+#main_data {
+  border-right: 1px solid #7d7d7d; }
+  @media screen and (max-width: 768px) {
+    #main_data {
+      border-right: none; } }
 
 .visits_today h3 {
   display: block;
@@ -333,7 +335,6 @@ section {
   color: #323a45; }
 
 #secondary_data {
-  border-left: 1px solid #7d7d7d;
   border-bottom: 1px solid #7d7d7d; }
   @media screen and (max-width: 768px) {
     #secondary_data {
@@ -343,7 +344,8 @@ section {
 
 #explanation {
   border-top: 1px solid #7d7d7d;
-  margin-top: -1px; }
+  margin-top: -1px;
+  margin-left: -1px; }
   #explanation h4 {
     font-size: 90%; }
   #explanation p {
