@@ -33,8 +33,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:keywords" content="web,traffic,analytics,data,States of Jersey,government,pages,website" />
 
-    <meta property="og:url" content="http://webanalytics.gov.je" />
-    <link rel="canonical" href="http://webanalytics.gov.je" />
+    <meta property="og:url" content="http://localhost:4000" />
+    <link rel="canonical" href="http://localhost:4000" />
 
     <title>States of Jersey government website activity dashboard</title>
     <meta property="og:title" content="States of Jersey government website activity dashboard" />
@@ -44,7 +44,7 @@
     <meta property="og:description" content="States of Jersey government website activity dashboard" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="http://webanalytics.gov.je/images/share-image.png" />
+    <meta property="og:image" content="http://localhost:4000/images/share-image.png" />
     <script src="/js/vendor/d3.v3.min.js"></script>
 
     <script src="https://use.typekit.net/npl5qjc.js"></script>
@@ -308,7 +308,9 @@
           <figure class="top-pages" id="top-pages-7-days" role="tabpanel"
             data-block="top-pages"
             data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/mobile/top-pages-7-days.json">
-            <h5><em>Visits over the last week to <strong>domains</strong>, including traffic to all pages within that domain.</em></h5>
+            <h5><em>Visits over the last week to <strong>pages</strong>.
+              <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/mobile/top-pages-7-days.csv">Download the full dataset.</a>
+            </em></h5>
             <div class="data bar-chart">
             </div>
           </figure>
@@ -317,7 +319,7 @@
             data-block="top-pages"
             data-source="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/mobile/top-pages-30-days.json">
             <h5><em>
-              Visits over the last month to <strong>domains</strong>, including traffic to all pages within that domain. 
+              Visits over the last month to <strong>pages</strong>.
               <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/mobile/top-pages-30-days.csv">Download the full dataset.</a>
             </em></h5>
             <div class="data bar-chart">
@@ -366,7 +368,7 @@
       </section>
       <section class="width-one-third">
         <h3>Download the data</h3>
-        <p>You can <a href="http://webanalytics.gov.je/mobile/data/">download the data here.</a> Available in JSON and CSV format.</p>
+        <p>You can <a href="http://localhost:4000/mobile/data/">download the data here.</a> Available in JSON and CSV format.</p>
       </section>
 </div>
 
