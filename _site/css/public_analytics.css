@@ -89,7 +89,7 @@ form {
   float: left;
   display: block;
   margin-right: 0%;
-  width: 75.0%; }
+  width: 75%; }
   .width-three-fourths:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -102,7 +102,7 @@ form {
         margin-right: 0; } }
 
 .offset-one-fourth {
-  margin-left: 25.0%; }
+  margin-left: 25%; }
 
 body {
   font-weight: normal;
