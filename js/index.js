@@ -323,7 +323,7 @@
             })
             .attr("href", function(d) {
               // added fix for gov.je pages as GA doesn't display the full URL
-              return exceptions[d.page] ||  ("http://" + d.domain + d.page);
+              return exceptions[d.page] ||  ("http://www.gov.je" + d.page);
             })
             .text(function(d) {
               return title_exceptions[d.page] || d.page_title;
