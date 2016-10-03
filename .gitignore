@@ -7,7 +7,6 @@ todo.txt
 *.csv
 .sass-cache
 Guardfile
-_site
 /*.js
 /*.gz
 /*.map

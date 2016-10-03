@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Initalize title and data source variables -->
+  
+  <head>
+  <!--
+
+    Hi! Welcome to our source code.
+
+    This dashboard uses data from States of Jersey Google Analytics account and acts as a host for this data in csv and json formats.
+
+
+    It was based on the analytics.usa.gov project by 18F (https://18f.gsa.gov/) and build by Robbie Andrews (@bearpig).
+    It uses 18F's Analytics Reporter tool for the creation of the data files (https://github.com/18F/analytics-reporter)
+
+
+    This is a fully open source project, and your contributions are welcome.
+
+    Frontend static site: https://github.com/StatesOfJersey/webanalytics.gov.je
+
+    -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="google-site-verification" content="NjbZn6hQe7OwV-nTsa6nLmtrOUcSGPRyFjxm5zkmCcg" />
+
+    <link rel="stylesheet" href="/css/vendor/css/uswds.v0.9.1.css">
+    <link rel="stylesheet" href="/css/public_analytics.css">
+    <link rel="icon" type="image/x-icon" href="/images/analytics-favicon.ico">
+
+    <meta name="twitter:site" content="@statesofjersey">
+    <meta name="twitter:creator" content="@statesofjersey">
+    <meta property="og:type" content="website" />
+    <meta property="og:keywords" content="web,traffic,analytics,data,States of Jersey,government,pages,website" />
+
+    <meta property="og:url" content="http://webanalytics.gov.je" />
+    <link rel="canonical" href="http://webanalytics.gov.je" />
+
+    <title>States of Jersey government website activity dashboard</title>
+    <meta property="og:title" content="States of Jersey government website activity dashboard" />
+    <meta property="og:site_name" content="States of Jersey government website activity dashboard" />
+
+    <meta name="description" content="States of Jersey government website activity dashboard">
+    <meta property="og:description" content="States of Jersey government website activity dashboard" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="http://webanalytics.gov.je/images/share-image.png" />
+    <script src="/js/vendor/d3.v3.min.js"></script>
+
+    <script src="https://use.typekit.net/npl5qjc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script>
+
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+      d3.selectAll('.download-data').on('click', function() {
+        var link = this.href;
+        var text = this.text;
+        ga('send','event','Download Data', link, text);
+      });
+
+      d3.selectAll('.external-link').on('click', function() {
+        var link = this.href;
+        var text = this.text;
+        ga('send','event','External Link', link, text);
+      });
+
+      d3.selectAll('.top-download-page').on('click', function() {
+        var link = this.href;
+        var text = this.text;
+        ga('send','event','Top-Download Page', link, text);
+      });
+
+      d3.selectAll('.top-download-file').on('click', function() {
+        var link = this.href;
+        var text = this.text;
+        ga('send','event','Top-Download File', link, text);
+      });
+
+    });
+  </script>
+
+    <!--[if lte IE 9]>
+    <script src="/js/vendor/aight.v2.min.js"></script>
+    <![endif]-->
+
+    <script src="/js/vendor/q.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/css/google-fonts.css" rel="stylesheet" />
+</head>
+
+
+  <body>
+    <header>
+        <div class="inner clearfix">
+            <h1>
+              <a href="/" class="external-link">
+                <img src="http://www.gov.je/_controltemplates/15/C5.GovJEResponsive/images/Leoaprds-white-V1.svg" alt="">
+                <span style="font-weight:300;">webanalytics</span>.gov.je
+                </a>
+            </h1>
+            <ul class="links">
+              <li><a href="#explanation">About <span class="sm-hide">this site</span></a></li>
+              <li><a href="http://webanalytics.gov.je/jerseylaw/data/"">Data</a></li>
+            </ul>
+            
+            
+              
+            
+        </div>
+    </header>
+    <div class="container">
+
+            
+      <section class="width-three-thirds">
+        <h1>Download the data</h1>
+        
+        
+        <div class="agency-selector-wrap">
+          <form>
+            <label for="agency-selector">Select an website</label>
+            <select name="agency-selector" id="agency-selector"  title="Website Selection Dropdown">
+              <option value="/data/">gov.je</option>
+              
+                <option value="/blog/data/">blog.gov.je</option>
+              
+                <option value="/jerseylaw/data/">jerseylaw.je</option>
+              
+                <option value="/mobile/data/">m.gov.je</option>
+              
+            </select>
+          </form>
+        </div>
+        
+        <h2>Visits to and traffic sources for jerseylaw.je</h2>
+        <table class="usa-table-borderless downloads">
+          <thead>
+            <tr>
+              <th scope="col">Description</th>
+              <th scope="col">Download</th>
+              <th scope="col">Update frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--
+            <tr>
+              <td>Visits to all domains over 30 days</td>
+              <td><a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/all-domains-30-days.csv" class="download-data"><span class="usa-label-big">CSV</span></a></td>
+              <td>Daily</td>
+            </tr>
+            -->
+            <!--
+            <tr>
+              <td>Top downloads yesterday</td>
+              <td><a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-downloads-yesterday.csv" class="download-data"><span class="usa-label-big">CSV</span></a></td>
+              <td>Daily</td>
+            </tr>
+            -->
+
+            <tr>
+            <td>Visits today</td>
+              <td>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/today.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/today.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+              </td>
+              <td>Every 3 Minutes</td>
+            </tr>
+            <tr>
+              <td>Visits to all domains over 48 hours</td>
+              <td>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-traffic-sources-30-days.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-traffic-sources-30-days.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+              </td>
+              <td>Daily</td>
+            </tr>
+
+            <tr>
+              <td>Visits to all domains over 90 days</td>
+              <td>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/users.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/users.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+              </td>
+              <td>Daily</td>
+            </tr>
+
+            <tr>
+              <td>Top exit pages (30 days)</td>
+              <td>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-exit-pages-30-days.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-exit-pages-30-days.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+              </td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <td>Top pages people are visiting</td>
+              <td>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-pages-realtime.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-pages-realtime.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+              </td>
+              <td>Every 3 minutes</td>
+            </tr>
+            <tr>
+              <td>Total people online</td>
+              <td>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/realtime.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/realtime.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+              </td>
+              <td>Every 3 minutes</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Visitor demographics for jerseylaw.je</h2>
+        <table class="usa-table-borderless downloads">
+          <thead>
+            <tr>
+              <th scope="col">Description</th>
+              <th scope="col">Download</th>
+              <th scope="col">Update frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Language</td>
+              <td>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/language.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/language.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+              </td>
+              <td>Daily</td>
+            </tr>
+            <!--
+            <tr>
+              <td>Visitors per country</td>
+              <td><a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-countries-realtime.json" class="download-data"><span class="usa-label-big">JSON</span></a></td>
+              <td>Every 3 minutes</td>
+            </tr>
+            -->
+            <!--
+            <tr>
+              <td>Visitors per city</td>
+              <td><a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/top-cities-realtime.json" class="download-data"><span class="usa-label-big">JSON</span></a></td>
+              <td>Every 3 minutes</td>
+            </tr>
+            -->
+            <tr>
+                <td>Desktop/mobile/tablet</td>
+                <td>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/devices.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/devices.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr class="parent">
+                <td>Web browsers</td>
+                <td>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/browsers.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/browsers.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr class="subset">
+                <td>Versions of Internet Explorer</td>
+                <td>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/ie.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/ie.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr class="parent">
+                <td>Operating systems</td>
+                <td>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/os.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/os.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr class="subset">
+                <td>Versions of Windows</td>
+                <td>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/windows.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/windows.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr>
+                <td>OS &amp; browser (combined)</td>
+                <td>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/os-browsers.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/os-browsers.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr>
+                <td>Windows &amp; browser (combined)</td>
+                <td>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/windows-browsers.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/windows-browsers.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr>
+                <td>Windows &amp; IE (combined)</td>
+                <td>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/windows-ie.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                  <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/windows-ie.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr>
+                <td>Screen sizes</td>
+                <td>
+                      <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/screen-size.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                      <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/screen-size.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+              <tr>
+                <td>Device model</td>
+                <td>
+                      <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/device_model.csv" class="download-data"><span class="usa-label-big">CSV</span></a>
+                      <a href="https://s3-eu-west-1.amazonaws.com/sojwebanalytics/JLIB/device_model.json" class="download-data"><span class="usa-label-big">JSON</span></a>
+                </td>
+                <td>Daily</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+
+
+    </div>
+    <div class="container">
+      <section id="explanation" class="width-two-thirds">
+
+          <h3>About this Site</h3>
+          <p>
+            This data provides a window into how people are interacting with the States of Jersey online. The data comes from a unified Google Analytics account for States of Jersey. This program helps departments understand how people find, access, and use States of Jersey services online.
+          </p>
+
+          <p>
+            This open source project is in the public domain, which means that this website and its data are free for you to use without restriction. You can find the <a href="https://github.com/StatesOfJersey/webanalytics.gov.je" class="external-link">code for this website</a>. This project is a fork of <a href="https://github.com/18F/analytics.usa.gov" class="external-link">Analytics.usa.gov</a> by <a href="https://18f.gsa.gov/" class="external-link">18F</a> and their <a href="https://github.com/18F/analytics-reporter" class="external-link">code behind the data collection</a>, both of which are on GitHub.
+          </p>
+
+          <p>This project was a collaborative effort between <a href="https://twitter.com/marcusferbrache" class="external-link">Marcus Ferbrache</a> (<a href="https://www.gov.je/pages/contacts.aspx?contactId=446">States of Jersey Web Team</a>) and <a href="https://twitter.com/bearpig" class="external-link">Robbie Andrews</a> (<a href="http://www.bearpig.com">Bearpig</a>) on behalf of <a href="http://techtribes.je/" class="external-link">TechTribes</a>.
+
+          <p>
+            We plan to expand the data made available here. If you have any suggestions, or spot any issues or bugs, please <a href="https://github.com/StatesOfJersey/webanalytics.gov.je/issues" class="external-link">open an issue on GitHub</a> or <a href="mailto:webteam@gov.je" class="external-link"> email the States of Jersey Web Team</a>.
+          </p>
+      </section>
+      <section class="width-one-third">
+        <h3>Download the data</h3>
+        <p>You can <a href="http://webanalytics.gov.je/jerseylaw/data/">download the data here.</a> Available in JSON and CSV format.</p>
+      </section>
+</div>
+
+</div>
+
+  </body>
+
+    <!--
+    IE detection, used to guide console formatting in subsequent include.
+  -->
+  <script type="text/javascript">window._ie9 = false;</script>
+
+  <!--[if IE 9 ]>
+    <script type="text/javascript">window._ie9 = true;</script>
+  <![endif]-->
+
+  <!--
+   IE10 JS targeting: https://stackoverflow.com/a/17099988
+   IE11 JS targeting: https://stackoverflow.com/a/17447695
+  -->
+  <script type="text/javascript">
+    window._ie10 = ("onpropertychange" in document && !!window.matchMedia);
+    window._ie11 = !!navigator.userAgent.match(/Trident\/7.0; rv 11/);
+    window._ie = window._ie9 || window._ie10 || window._ie11;
+  </script>
+
+  <script src="/js/vendor/uswds.v0.9.1.js"></script>
+  <script src="/js/index.js"></script>
+
+  <!-- Google Analytics tracking code for this website -->
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-12796584-34', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+</html>
