@@ -211,13 +211,13 @@
         var us_visits = 0;
         d.data.forEach(function(c) {
           total_visits += parseInt(c.active_visitors);
-          if (c.country === "United States") {
+          if (c.country === "Jersey") {
             us_visits = c.active_visitors;
           }
         });
         var international = total_visits - us_visits;
         var data = {
-          "United States": us_visits,
+          "Jersey": us_visits,
           "International": international
         };
         return addShares(listify(data));
@@ -231,7 +231,7 @@
       .transform(function(d) {
         var countries = addShares(d.data, function(d){ return d.active_visitors; });
         countries = countries.filter(function(c) {
-          return c.country != "United States";
+          return c.country != "Jersey";
         });
         return countries.slice(0, 15);
       })
@@ -285,7 +285,7 @@
               return d.page_title;
             })
             .attr("href", function(d) {
-              return exceptions[d.page] || ("http://gov.je" + d.page);
+              return exceptions[d.page] || d.page;
             })
             .text(function(d) {
               return title_exceptions[d.page] || d.page_title;
@@ -321,7 +321,7 @@
             })
             .attr("href", function(d) {
               // added fix for gov.je pages as GA doesn't display the full URL
-              return exceptions[d.page] || ("http://gov.je" + d.page);
+              return exceptions[d.page] || d.page;
             })
             .text(function(d) {
               return title_exceptions[d.page] || d.page_title;
