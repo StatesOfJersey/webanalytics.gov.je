@@ -9,6 +9,7 @@
 
     // for 7/30 days tabs
 
+
   };
 
   var title_exceptions = {
@@ -305,6 +306,7 @@
     // the top pages block(s)
     "top-pages-realtime": renderBlock()
       .transform(function(d) {
+        console.log(d);
         return d.data;
       })
       .on("render", function(selection, data) {
@@ -321,7 +323,7 @@
             })
             .attr("href", function(d) {
               // added fix for gov.je pages as GA doesn't display the full URL
-              return exceptions[d.page] || d.page;
+              return exceptions[d.page] ||  d.domain + d.page;
             })
             .text(function(d) {
               return title_exceptions[d.page] || d.page_title;
