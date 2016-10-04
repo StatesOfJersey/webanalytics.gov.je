@@ -295,11 +295,12 @@ header {
 #agency-selector {
   width: 100%;
   max-width: none; // USWDS override
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   vertical-align: middle;
   color: $red;
-  padding:0.5em 0.7em;
+  padding:0.1em 0.7em;
+  margin-top:5px;
 
   option {
       padding:0.5em 1em;

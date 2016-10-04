@@ -253,11 +253,12 @@ header {
 #agency-selector {
   width: 100%;
   max-width: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   vertical-align: middle;
   color: #b60011;
-  padding: 0.5em 0.7em; }
+  padding: 0.1em 0.7em;
+  margin-top: 5px; }
   #agency-selector option {
     padding: 0.5em 1em; }
   @media screen and (max-width: 992px) {
