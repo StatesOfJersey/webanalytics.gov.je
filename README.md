@@ -1,6 +1,6 @@
-## analytics.usa.gov
+## webanalytics.gov.je
 
-A project to publish website analytics for the US federal government.
+A project to publish website analytics for the States of Jersey government and is a fork of [analytics.usa.gov](https://github.com/18F/analytics.usa.gov).
 
 For a detailed description of how the site works, read [18F's blog post on analytics.usa.gov](https://18f.gsa.gov/2015/03/19/how-we-built-analytics-usa-gov/).
 
@@ -100,30 +100,26 @@ serve --cors
 The data will be available at `http://localhost:3000` over CORS, with no path prefix. For example, device data will be at `http://localhost:3000/devices.json`.
 
 
-### Deploying to Staging (18F specific)
-Pushes to the 18f-pages branch are reflected in the staging environment https://pages.18f.gov/analytics.usa.gov/. All changes can be seen here prior to production release.
-
 ### Deploying the app to production
 
-In production, the site's base URL is set to `https://analytics.usa.gov` and the data's base URL is set to `https://analytics.usa.gov/data/live`.
+In production, the site's base URL is set to `https://webanalytics.gov.je` and the data's base URL is set to `https://webanalytics.gov.je/data/live`.
 
-To deploy this app to `analytics.usa.gov`, you will need authorized access to 18F's Amazon S3 bucket for the project.
+To deploy this app to `webanalytics.gov.je`, you will need authorized access to the States of Jersey's git repo for the project.
 
-To deploy the site using `s3cmd`, production settings, and a **5 minute cache time**, run:
+To deploy the site, run:
 
 ```bash
-make deploy
+make
 ```
 
-**Use the full command above.** The full command ensures that the build completes successfully, with production settings, _before_ triggering an upload to the production bucket.
+**Use the full command above.** The full command ensures that the build completes successfully. This creates/updates the `_site` folder. Then commit the changes to `SoJ_Live` branch to this Github repo. This will automatically deploy to the live server (you may have to clear the cache or wait a few minutes to see changes).
 
 
 ### Environments
 
 | Environment | Branch | URL |
 |-------------| ------ | --- |
-| Staging | 18f-pages  | https://pages.18f.gov/analytics.usa.gov/  |
-| Production | 18f-pages | https://www.analytics.usa.gov  |
+| Production | SOJ_Live | https://webanalytics.gov.je  |
 
 ### Public domain
 
