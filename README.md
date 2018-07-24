@@ -102,7 +102,7 @@ The data will be available at `http://localhost:3000` over CORS, with no path pr
 
 ### Deploying the app to production
 
-In production, the site's base URL is set to `https://webanalytics.gov.je` and the data's base URL is set to `https://webanalytics.gov.je/data/live`.
+In production, the site's base URL is set to `http://webanalytics.gov.je` and the data's base URL is set to `http://webanalytics.gov.je/data/live`.
 
 To deploy this app to `webanalytics.gov.je`, you will need authorized access to the States of Jersey's git repo for the project.
 
@@ -119,7 +119,7 @@ make
 
 | Environment | Branch | URL |
 |-------------| ------ | --- |
-| Production | SOJ_Live | https://webanalytics.gov.je  |
+| Production | SOJ_Live | http://webanalytics.gov.je  |
 
 ### Public domain
 
