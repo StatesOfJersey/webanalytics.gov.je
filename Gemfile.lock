@@ -6,6 +6,7 @@ GEM
       thor (~> 0.19)
     colorator (1.1.0)
     ffi (1.9.14)
+    ffi (1.9.14-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.2.1)
       colorator (~> 1.0)
@@ -42,9 +43,13 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   bourbon
   jekyll
   neat
   sass
+
+BUNDLED WITH
+   1.17.2
